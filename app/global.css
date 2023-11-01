@@ -1,8 +1,13 @@
 :root{
     --border-medium: 1px solid rgba(0,0,0, 1);
-    --border-thin: 1px solid rgba(0,0,0, 0.3);
-    --border-ultra-thin: 1px solid rgba(0,0,0, 0.1);
-    --border-radius-small: 4px;
+    --border-thin: 1px solid #E6ECF8;
+    --border-radius: 4px;
+    --text-color: #000;
+    --primary-color: #6E07F3;
+    --secondary-color: #5BE9B9;
+    --background-color: #ffffff;
+    --dark-color: #141c3a;
+    --box-shadow-bottom: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
 }
 
 *{
@@ -11,10 +16,24 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-color);
+}
+
 body{
-    font-size: 16px;
+    font-size: 18px;
     min-height: 100vh;
     width: 100%;
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url('../styles/fonts/roboto_mono_semibold.ttf');
 }
 
 .margin-auto-1440{
@@ -32,6 +51,7 @@ button{
 }
 
 .next-link{
+    color: var(--text-color);
     cursor: pointer;
     text-decoration: none;
 }
@@ -43,5 +63,64 @@ button{
 }
 
 .transition-fast{
-    transition: all ease-in .1s;
+    transition: all ease-in .2s;
+}
+
+.border-radius{
+    border-radius: var(--border-radius);
+}
+
+.hover-fx:hover{
+    border: var(--border-medium);
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.primary-button{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: all ease-in .2s;
+    padding: 0 0.5em;
+    height: 2.5em;
+    width: auto;
+}
+
+.primary-button:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary-button{
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 18px;
+    transition: all ease-in .2s;
+    margin-top: 1em;
+    padding: 0 1em;
+    height: 2.5em;
+    width: auto;
+}
+
+.secondary-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.hero-header{
+    color: var(--dark-color);
+    font-family: RobotoMono;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.hero-text{
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    pointer-events: none;
 }

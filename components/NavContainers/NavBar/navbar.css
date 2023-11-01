@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    padding: 0 1em;
+    height: 4em;
+    max-width: 1440px;
+}
+
+.brand-container{
+    height: 2.5em;
+    width: 2.5em;
+}
