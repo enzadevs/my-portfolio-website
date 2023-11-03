@@ -35,6 +35,7 @@ export default function SkillsContainer(){
                         <p>NextJS</p>
                         <p>Javascript</p>
                         <p>CSS</p>
+                        <p>HTML</p>
                     </span>
                 </div>
                 <div className='skill-column last-column'>

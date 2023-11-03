@@ -65,7 +65,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 3em 0;
+    padding-top: 2em;
     height: 100%;
     width: 100%;
 }
@@ -107,4 +107,108 @@
 
 .highlight-text{
     color: var(--primary-color);
+}
+
+.recent-works-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.projects-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em;
+    width: 100%;
+}
+
+.project-itself{
+    border-radius: 12px;
+    position: relative;
+    flex: 33%;
+    height: 270px;
+    max-width: 30%;
+}
+
+.link-container{
+    background-color: var(--dark-color);
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1em;
+    opacity: 0;
+    transition: all ease-in .2s;
+    height: 100%;
+    width: 100%;
+}
+
+.link-container:hover{
+    opacity: 1;
+}
+
+.project-title{
+    color: white;
+    font-family: Eurostile;
+    font-size: 1.25em;
+    pointer-events: none;
+    text-align: center;
+}
+
+.visit-wesite-button{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 18px;
+    transition: all ease-in .2s;
+    padding: 0 0.5em;
+    height: 2.5em;
+}
+
+.visit-wesite-button:hover{
+    background-color: var(--primary-color);
+}
+
+.project-image{
+    border-radius: 12px;
+    object-fit: cover;
+    position: relative !important;
+    transform: scale(1);
+    z-index: -1;
+}
+
+.border-bottom{
+    border-bottom: var(--border-thin);
+}
+
+.bottom-contacts-container{
+    margin: 1em 0 -5em 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.contacts-box{
+    background-color: var(--dark-color);
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em;
+    margin: 0 1em;
+    height: 10em;
+    max-width: 1440px;
+    width: 100%;
 }
