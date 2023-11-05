@@ -13,11 +13,13 @@ export default function HomePage(){
     return (
         <div className='home-page-container'>
             <IndexHeroContainer/>
-            <Image
-                className='index-hero-devices-img'
-                src={HeroDevices}
-                alt='desktop with pc and tablet'
-            ></Image>
+            <span className='hero-devices-image-wrapper centre'>
+                <Image
+                    className='index-hero-devices-img'
+                    src={HeroDevices}
+                    alt='desktop with pc and tablet'
+                ></Image>
+            </span>
             <IndexAboutContainer/>
             <SkillsContainer/>
             <RecentWorkContainer/>

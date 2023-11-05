@@ -1,6 +1,6 @@
 footer{
     background-color: var(--primary-color);
-    padding-top: 7em;
+    padding-top: 10em;
     height: auto;
     width: 100%;
 }
@@ -8,8 +8,9 @@ footer{
 .footer-div{
     color: white;
     flex-flow: column nowrap;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
     gap: 2em;
+    text-align: center;
 }
 
 .footer-logo{

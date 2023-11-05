@@ -7,7 +7,7 @@
     --secondary-color: #5BE9B9;
     --background-color: #ffffff;
     --dark-color: #141c3a;
-    --box-shadow-bottom: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+    --box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 }
 
 *{
@@ -122,4 +122,21 @@ button{
     font-weight: 400;
     letter-spacing: 1px;
     pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+
+    .hero-header{
+        font-size: 1.50em;
+    }
+    .hero-text{
+        font-size: 1em;
+    }
+
+    .primary-button, .secondary-button{
+        height: 42px;
+    }
 }

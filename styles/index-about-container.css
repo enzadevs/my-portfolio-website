@@ -1,0 +1,43 @@
+.index-about-container{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.text-container{
+    color: white;
+    text-align: center;
+    padding: 5em 0 15em 0;
+    max-width: 768px;
+}
+
+.about-header, .about-text{
+    margin: 0.5em 0;
+    font-weight: 400;
+}
+
+.resume-btn{
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .index-about-container{
+        padding: 0 1em;
+    }
+
+    .text-container{
+        padding: 3em 0 15em 0;
+    }
+
+    .about-header{
+        font-size: 1.50em;
+        margin-bottom: 1em;
+    }
+
+    .about-text{
+        font-size: 1em;
+    }
+}

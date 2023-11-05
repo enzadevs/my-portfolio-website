@@ -1,3 +1,4 @@
+import 'styles/skills-container.css'
 import {TbDatabaseCog} from 'react-icons/tb'
 import {LiaTerminalSolid} from 'react-icons/lia'
 import {BsPatchPlus} from 'react-icons/bs'

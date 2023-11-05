@@ -16,12 +16,12 @@ export default function Footer(){
                     quality={100}
                 ></Image>
                 <h2 className='footer-header'>Living, learning and leveling up daily.</h2>
-                <p>Handcrafted by me.</p>
+                <p>Handcrafted from zero, by me.</p>
                 <span className='links-container'>
-                    <Link href='https://github.com/enzadevs' className='footer-link-container next-link centre'>
+                    <Link href='https://github.com/enzadevs' className='footer-link-container next-link centre' target='_blank'>
                         <BsGithub className='footer-icons'/>
                     </Link>
-                    <Link href='mailto:e.eziz5@yandex.ru?subject=Hello' className='footer-link-container next-link centre'>
+                    <Link href='mailto:e.eziz5@yandex.ru?subject=Hello' className='footer-link-container next-link centre' target='_blank'>
                         <MdOutlineMail className='footer-icons'/>
                     </Link>
                 </span>

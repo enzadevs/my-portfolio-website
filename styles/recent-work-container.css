@@ -1,0 +1,74 @@
+.recent-works-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    margin-top: 3em;
+    width: 100%;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+.project-wrapper{
+    border-radius: 12px;
+    display: block;
+    position: relative;
+    height: 280px;
+    width: 100%;
+}
+
+.project-overlay{
+    background-color: var(--dark-color);
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    opacity: 0;
+    padding: 0 1em;
+    position: absolute;
+    transition: all ease-in .2s;
+    height: 100%;
+    width: 100%;
+}
+
+.project-overlay:hover{
+    opacity: 1;
+}
+
+.overlay-header{
+    color: white;
+}
+
+.project-image{
+    border-radius: 12px;
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects-container{
+        grid-template-columns: repeat(auto-fill,minmax(100%, 1fr));
+    }
+
+    .overlay-header{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    .project-wrapper{
+        height: 220px;
+    }
+}
