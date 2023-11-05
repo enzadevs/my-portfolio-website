@@ -17,3 +17,30 @@ nav{
     height: 100%;
     width: 100%;
 }
+
+.cancel-container{
+    color: var(--dark-color);
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.cancel-container:hover{
+    color: var(--primary-color);
+}
+
+.cancel-logo{
+    height: 24px;
+    width: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cancel-container{
+        height: 42px;
+        width: 42px;
+    }
+
+    .cancel-logo{
+        height: 20px;
+        width: 20px;
+    }
+}

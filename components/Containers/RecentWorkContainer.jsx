@@ -20,6 +20,7 @@ export default function RecentWorkContainer(){
                             className='project-image'
                             src={PhotoStash}
                             alt='photo of photostash website'
+                            quality='80'
                         ></Image>
                     </span>
                 </span>

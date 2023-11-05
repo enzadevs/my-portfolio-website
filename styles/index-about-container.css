@@ -20,7 +20,24 @@
 }
 
 .resume-btn{
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all ease-in .2s;
+    text-decoration: none;
     margin-top: 1em;
+    padding: 0 1em;
+    height: 2.5em;
+    width: fit-content;
+}
+
+.resume-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -39,5 +56,9 @@
 
     .about-text{
         font-size: 1em;
+    }
+
+    .resume-btn{
+        height: 42px;
     }
 }
