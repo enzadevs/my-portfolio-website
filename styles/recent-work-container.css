@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.recent-work-text{
+    padding: 0 1em;
+}
+
 .projects-container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));

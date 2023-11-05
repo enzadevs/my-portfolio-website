@@ -7,7 +7,7 @@ export default function RecentWorkContainer(){
     return (
         <div className='recent-works-container margin-auto-1440'>
             <h2 className='hero-header'>My recent work</h2>
-            <p>Here are a few projects I've developed and been working on:</p>
+            <p className='recent-work-text'>Here are a few projects I've developed and been working on:</p>
                 <span className='projects-container'>
                     <span className='project-wrapper'>
                         <span className='project-overlay'>
