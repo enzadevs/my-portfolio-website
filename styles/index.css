@@ -14,12 +14,3 @@
     height: 100%;
     width: 100%;
 }
-
-.border-bottom{
-    border-bottom: var(--border-thin);
-    width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-    
-}

@@ -18,6 +18,7 @@ export default function HomePage(){
                     className='index-hero-devices-img'
                     src={HeroDevices}
                     alt='desktop with pc and tablet'
+                    priority={true}
                 ></Image>
             </span>
             <IndexAboutContainer/>

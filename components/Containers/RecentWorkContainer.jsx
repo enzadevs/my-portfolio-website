@@ -2,6 +2,7 @@ import 'styles/recent-work-container.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import PhotoStash from 'public/images/photo_stash_bg_img.jpg'
+import Zehinlije from 'public/images/zehinlije.JPG'
 
 export default function RecentWorkContainer(){
     return (
@@ -20,6 +21,20 @@ export default function RecentWorkContainer(){
                             className='project-image'
                             src={PhotoStash}
                             alt='photo of photostash website'
+                            quality='80'
+                        ></Image>
+                    </span>
+                    <span className='project-wrapper'>
+                        <span className='project-overlay'>
+                            <h4 className='hero-header overlay-header'>Best place for your kids.</h4>
+                            <span className='prototyping-button centre'>
+                                Prototyping
+                            </span>
+                        </span>
+                        <Image
+                            className='project-image'
+                            src={Zehinlije}
+                            alt='photo of zehinlije website'
                             quality='80'
                         ></Image>
                     </span>
