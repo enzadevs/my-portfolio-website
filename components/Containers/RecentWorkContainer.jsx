@@ -22,6 +22,7 @@ export default function RecentWorkContainer(){
                             src={PhotoStash}
                             alt='photo of photostash website'
                             quality='80'
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                         ></Image>
                     </span>
                     <span className='project-wrapper'>
@@ -36,6 +37,7 @@ export default function RecentWorkContainer(){
                             src={Zehinlije}
                             alt='photo of zehinlije website'
                             quality='80'
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                         ></Image>
                     </span>
                 </span>
