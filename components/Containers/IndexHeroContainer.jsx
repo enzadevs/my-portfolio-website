@@ -14,7 +14,8 @@ export default function IndexHeroContainer(){
                     alt='profile photo of mine'
                     height={200}
                     width={200}
-                    quality={100}
+                    quality={85}
+                    priority={true}
                 ></Image>
             </span>
         </div>
